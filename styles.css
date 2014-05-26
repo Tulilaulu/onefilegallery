@@ -1,0 +1,154 @@
+<style>
+html{
+  padding:0px;
+  margin:0px;
+  height:100%;
+}
+body{
+  background-color:<?php echo $backgroundcolor; ?>;
+  padding:0px;
+  margin:0px;
+  height:100%;
+  font-family:'Verdana';
+}
+.directory, .file{
+  width:170px;
+  padding:10px;
+  height:200px;
+  margin:20px;
+  float:left;
+  line-height:25px;
+  text-align:center;
+} 
+.directory img{
+  width:140px;
+}
+.file img{
+  width:140px;
+}
+.directory a span, .file a span{
+  display:block;
+  color:<?php echo $elementNameColor; ?>;
+  font-family: 'Dosis', sans-serif;
+  font-size:16px;
+  font-weight:400;
+  text-decoration:none;       
+}
+.directory a, .file a{
+  text-decoration:none;
+}
+/* .imgwrap{
+  background-color:<?php echo $thumbnailBGColor; ?>;
+  width:170px;
+  height:170px;
+  overflow:hidden;
+}*/
+.directory{
+  background-color:<?php echo $directoryBoxColor; ?>;
+}
+.file{
+  background-color:<?php echo $fileBoxColor; ?>;
+  height:170px;
+  padding-top:40px;
+}
+.download{
+  position:relative;
+  margin:20px auto;
+  width:100px;
+  height:100px;
+  border:1px solid black;
+  text-decoration:none;
+  padding:40px;
+}
+#navigation{
+  z-index:101;
+  position:absolute;
+  top:0px;
+  left:0px;
+  width:100%;
+  height:40px;
+  display:block;
+}
+#navigation-inner{
+  padding:20px;
+  line-height:40px;
+  background-color:<?php echo $navigationBackgroundColor; ?>;
+  color:<?php echo $navigationSeparatorColor; ?>;
+  font-family: 'Dosis', sans-serif;
+  font-size:16px;
+  font-weight:400;
+}
+#navigation-inner a{
+  display:inline-block;
+  background-color:<?php echo $navigationElementColor; ?>;
+  height:40px;
+  padding: 0px 10px;
+  text-decoration:none;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  color:<?php echo $navigationLinkColor; ?>;
+  border:1px solid <?php echo $navigationElementBorderColor; ?>;
+}
+#navigation a:hover{
+  opacity:0.8;
+  filter:alpha(opacity=80);       
+}
+#main{
+  position:absolute;
+  top:80px;  
+  z-index:1;
+}
+#fade{
+  background-color:black;
+  opacity:0.5;
+  filter:alpha(opacity=50);
+  display:none;
+  width:100%;
+  height:100%; 
+  position:absolute;
+  top:0px;
+  left:0px;
+  z-index:99;
+}
+#objectwrapper{ 
+  cursor:pointer;
+  z-index:100;
+  position:relative;
+  width:100%;
+  height:100%;
+  text-align:center;
+  display:none;
+}
+#objectwrapper>img{
+  display:none;
+  margin-top:100px;
+  border: solid <?php echo $imageBorderWidth." ".$imageBorderColor; ?>;
+  -webkit-border-radius: <?php echo $imageBorderRadius; ?>;
+  -moz-border-radius: <?php echo $imageBorderRadius; ?>;
+  border-radius: <?php echo $imageBorderRadius; ?>;
+  max-width:85%;
+  max-height:85%;
+}
+#objectwrapper>a{
+  display:none;
+  position:relative;
+  margin: 100px auto;
+  width:160px;
+  height:220px;
+  padding:20px; 
+  background-color: <?php echo $fileBoxColor; ?>;
+  text-decoration:none;
+} 
+#objectwrapper a img{
+  width:160px;
+}
+#objectwrapper a span{
+  font-family: 'Dosis', sans-serif;
+  font-size:18px;
+  font-weight:400;
+  margin-top:14px;
+  display:block;
+  color:<?php echo $elementNameColor; ?>;
+}
+</style>
