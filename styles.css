@@ -19,6 +19,13 @@ body{
   float:left;
   line-height:25px;
   text-align:center;
+  -webkit-border-radius:<?php echo $tileBorderRadius; ?>;
+  -moz-border-radius:<?php echo $tileBorderRadius; ?>;
+  border-radius:<?php echo $tileBorderRadius; ?>;
+  /*todo: option here*/
+  -webkit-box-shadow: 3px 4px 5px -3px rgba(62,66,60,0.61);
+  -moz-box-shadow: 3px 4px 5px -3px rgba(62,66,60,0.61);
+  box-shadow: 3px 4px 5px -3px rgba(62,66,60,0.61);
 } 
 .directory img{
   width:140px;

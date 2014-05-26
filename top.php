@@ -13,6 +13,7 @@ $imageBorderColor = "#FFFFFF";
 $imageBorderRadius = "2px";
 $elementNameColor = "#FFFFFF";
 $thumbnailBGColor = "#77DD77";
+$tileBorderRadius = "5px";
 
 $GLOBALS['generalFileIcon'] = "file.svg";//type filename here for file icon (for non-picture files)
 $GLOBALS['navigationSeparator'] = "&gt;";
